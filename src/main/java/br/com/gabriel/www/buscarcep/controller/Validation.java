@@ -21,7 +21,7 @@ public class Validation {
         resultado = matcherCep.find();
 
         if(!resultado) {
-            throw new RequisicaoInvalidaException("O Cep deve conter tamanho 8");
+            throw new RequisicaoInvalidaException("Nao foi possivel encontrar o CEP informado");
         }
 
     }
