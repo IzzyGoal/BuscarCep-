@@ -36,19 +36,19 @@
 
 	<build>
 		<plugins>
+		<plugin>
+			<groupId>com.heroku.sdk</groupId>
+			<artifactId>heroku-maven-plugin</artifactId>
+			<version>3.0.3</version>
+		</plugin>
+
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<release>11</release>
-					<compilerArgs>--enable-preview</compilerArgs>
-				</configuration>
-			</plugin>
+
+
 		</plugins>
 	</build>
 
